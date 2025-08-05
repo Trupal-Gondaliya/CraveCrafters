@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign Up - CraveCrafters</title>
+	<link rel="stylesheet" type="text/css" href="cravecrafters.css">
+</head>
+<body class="signup">
+	<main>
+        <div class="signup-container">
+        	 <form id="signup-form" onsubmit="handleSubmit(event)" action="signup.php" method="post">
+	            <div class="formup">
+	            	<h1>Sign Up to CraveCrafters</h1>
+	            	<button class="canclebtn"><a href="index.html">X</a></button>
+	            </div>
+                <div class="signupdetail">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="signupdetail">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="signupdetail">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </main>
+   <script type="text/javascript" src="CraveCrafters.js"></script>
+</body>
+</html>

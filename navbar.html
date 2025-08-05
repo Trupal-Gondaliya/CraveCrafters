@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" type="text/css" href="cravecrafters.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&family=Playwrite+BE+WAL:wght@100..400&family=Playwrite+CU:wght@100..400&    family=Playwrite+PE:wght@100..400&family=Square+Peg&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">CraveCrafters</div>
+            <nav id="nav-items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Recipes <i class="fa-solid fa-caret-down"></i> </a>
+                        <ul class="dropdown">
+                            <li><a href="gujarati.html">Gujarati</a></li>
+                            <li><a href="punjabi.html">Punjabi</a></li>
+                            <li><a href="bengali.html">Bengali</a></li>
+                            <li><a href="southindian.html">South Indian</a></li>
+                            <li><a href="maharashtra.html">Maharashtra</a></li>
+                            <li><a href="rajasthan.html">Rajasthani</a></li>
+                            <li><a href="kashmir.html">Kashmiri</a></li>
+                            <li><a href="fastfood.html">Fast Food</a></li>
+                            <li><a href="cake.html">Cakes</a></li>
+                            <li><a href="colddrink.html">Cold Drinks</a></li>
+                            <li><a href="salad.html">Salad</a></li>
+                            <li><a href="icecream.html">Ice Cream</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li class="signinddm"><a href="signin.html">Sign In</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                    <input type="text" class="searchbox" placeholder="Search..." oninput="cancelbtn()">
+                    <i class="fas fa-times clear-icon" onclick="clearSearchBox()"></i>
+                    <button onclick="searchicon()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+        </div>
+         <div class="line"></div>
+    </header>
+    <script src="CraveCrafters.js"></script>
+</body>
+</html>
